@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>AzerType</title>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>iType</h1>
+        <h2>L'application pour ecrire plus vite !</h2>
+        <h3>iType est une application en ligne pour apprendre à taper plus vite au clavier :)</h3>
+    </header>
+    <main>
+        <div id="zoneOption" class="optionSource">
+            <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
+            <form method="get" action="">
+                <input type="radio" name="type" value="1" id="mots" checked/><label for="mots">Mots</label>
+                <input type="radio" name="type" value="2" id="phrases"/><label for="phrases">Phrases</label>
+            </form>
+        </div>
+        <div class="zoneProposition">
+            Azerty
+        </div>
+        <div id="zoneDeSaisie" class="zoneSaisire">
+            <input type="text" id="inputEcreture" name="inputEcriture"/>
+            <button id="btnValiderMot">Valider</button>
+        </div>
+        <div id="zoneDeScore" class="zoneScore">
+            votre score : <span>0</span>
+        </div>
+
+    </main>
+    <footer>
+        <p>@copyright : The.chergui</p>
+    </footer>
+</body>
