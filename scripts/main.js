@@ -1,10 +1,1 @@
-let inputEcreture=document.getElementById("inputEcreture");
-console.log(inputEcreture);
-let btnValiderMot=document.getElementById("btnValiderMot");
-console.log(btnValiderMot);
-let zoneProposition=document.querySelector(".zoneProposition");
-console.log(zoneProposition);
-let spanScore=document.querySelector(".zoneScore span");
-console.log(spanScore);
-let listBtnRadio=document.querySelectorAll(".optionSource input");
-console.log(listBtnRadio);
+lancerJeu();
