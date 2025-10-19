@@ -152,11 +152,72 @@ footer{
 .zoneScore {
     font-size: 20px;
 }
+.zoneDePartage{
+    margin:10px;
+    padding:10px;
+}
+.zoneDePartage button{
+    padding: 10px 25px 10px 25px;
+}
+.popupBackground {
+    display: none;
+    position: fixed;
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.popup{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color:white;
+    background-color: #f76c5e;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500px;
+    z-index: 1;
 
+}
+.active {
+    display: flex !important;
+}
+
+.popup p{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup div{
+    font-size: 25px;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+.popup input{
+    margin-bottom: 5px;
+}
+.popup button{
+    margin-bottom: 15px;
+}
+.erreur{
+  border-color:red ;
+  box-shadow: 0px 0px 10px 1px red ;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.erreur::placeholder{
+  color:rgb(255, 0, 0);
+}
 @media screen and (max-width: 1200px) {
     main {
         width: 60%;
         padding: 30px;
+        
     }
 }
 
