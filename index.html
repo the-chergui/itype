@@ -4,26 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.1"/>
     <link rel="stylesheet" href="styles/style.css"/>
     <title>iType</title>
+    <script src="scripts/popup.js" defer></script>
     <script src="scripts/config.js" defer></script>
     <script src="scripts/script.js" defer></script>
     <script src="scripts/main.js" defer></script>
+    
 
 </head>
 <body>
     <header>
         <h1>iType</h1>
         <h2>L'application pour ecrire plus vite !</h2>
-        <h3>iType est une application en ligne pour apprendre à taper plus vite au clavier :)</h3>
+        <h3>itype est une application en ligne pour apprendre à taper plus vite au clavier :)</h3>
     </header>
     <main>
         <div id="zoneOption" class="optionSource">
             <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
             <form method="get" action="">
-                <input type="radio" name="type" value="1" id="mots" checked/><label for="mots">Mots</label>
-                <input type="radio" name="type" value="2" id="phrases"/><label for="phrases">Phrases</label>
+                <input type="radio" name="typeDejeu" value="1" id="mot" checked/><label for="mots">Mots</label>
+                <input type="radio" name="typeDejeu" value="2" id="phrases"/><label for="phrases">Phrases</label>
             </form>
         </div>
-        <div class="zoneProposition">
+        <div id="zoneDeProposition" class="zoneProposition">
             Azerty
         </div>
         <div id="zoneDeSaisie" class="zoneSaisire">
@@ -31,12 +33,25 @@
             <button id="btnValiderMot">Valider</button>
         </div>
         <div id="zoneDeScore" class="zoneScore">
-            votre score : <span>0</span>
+            Votre score : <span>0</span>
+        </div>
+        <div class="zoneDePartage">
+            <button>Partager</button>
         </div>
 
     </main>
     <footer>
         <p>@copyright : The.chergui</p>
     </footer>
+    <div class="popupBackground">
+        <div class="popup">
+            <div>Partager Votre score !</div>
+            <form>
+                <label for="nom">Votre nom : </label><input type="text" id="nom" name="nom" placeholder="Votre nom"/>
+                <label for="email">Avec qui voulez-vous partager votre score !</label><input type="email" id="email" name="email" placeholder="nom@domain.com"/>
+                <button id="btnEnvoyer">Envoyer</button>
 
+            </form>
+            </div>
+    </div>
 </body>
